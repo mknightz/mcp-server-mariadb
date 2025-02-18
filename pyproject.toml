@@ -1,0 +1,13 @@
+[project]
+name = "mcp-server-mariadb"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mariadb>=1.1.12",
+    "mcp[cli]>=1.2.1",
+    "mysql-connector-python>=9.2.0",
+    "pytest>=8.3.4",
+    "python-dotenv>=1.0.1",
+]
