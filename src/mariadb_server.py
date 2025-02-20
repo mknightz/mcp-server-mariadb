@@ -18,7 +18,7 @@ READ_ONLY_KEYWORD_NAMES = ", ".join(READ_ONLY_KEYWORDS)
 
 @dataclass
 class DBconfig:
-    host: str = os.getenv("MARIADB_HOST")
+    host: str = os.getenv("MARIADB_HOST", "localhost")
     port: int = int(os.getenv("MARIADB_PORT", "3306"))
     user: str = os.getenv("MARIADB_USER", "")
     password: str = os.getenv("MARIADB_PASSWORD", "")
