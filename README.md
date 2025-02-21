@@ -86,9 +86,9 @@ Add this configuration to enable development/unpublished servers:
             "command": "/PATH/TO/uv",
             "args": [
                 "--directory",
-                "/YOUR/SOURCE/PATH/mariadb-mcp-server",
+                "/YOUR/SOURCE/PATH/mariadb-mcp-server/src/mariadb_mcp_server",
                 "run",
-                "mariadb_server.py"
+                "server.py"
             ]
         }
     }
@@ -98,7 +98,7 @@ Add this configuration to enable development/unpublished servers:
 **Note**: Replace these placeholders with actual paths:
 
 - `/PATH/TO/uv`: Full path to UV executable
-- `/YOUR/SOURCE/PATH/mariadb-mcp-server`: Path to server source code
+- `/YOUR/SOURCE/PATH/mariadb-mcp-server/src/mariadb_mcp_server`: Path to server source code
 
 ## License
 
