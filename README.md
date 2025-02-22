@@ -89,7 +89,14 @@ Add this configuration to enable development/unpublished servers:
                 "/YOUR/SOURCE/PATH/mariadb-mcp-server/src/mariadb_mcp_server",
                 "run",
                 "server.py"
-            ]
+            ],
+            "env": {
+                "MARIADB_HOST": "127.0.0.1",
+                "MARIADB_USER": "USER",
+                "MARIADB_PASSWORD": "PASSWORD",
+                "MARIADB_DATABASE": "DATABASE",
+                "MARIADB_PORT": "3306"
+            }
         }
     }
 }
