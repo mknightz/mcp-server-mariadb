@@ -1,5 +1,5 @@
 from dotenv import load_dotenv
-from src.mariadb_mcp_server.server import get_connection, is_read_only_query
+from src.mcp_server_mariadb.server import get_connection, is_read_only_query
 
 load_dotenv()
 
