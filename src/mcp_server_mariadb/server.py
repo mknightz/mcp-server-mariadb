@@ -99,5 +99,9 @@ def query_database(query: str) -> str:
         return f"Error executing query {str(e)}"
 
 
-if __name__ == "__main__":
+def main():
     mcp.run(transport="stdio")
+
+
+if __name__ == "__main__":
+    main()
