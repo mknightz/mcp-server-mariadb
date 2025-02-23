@@ -1,7 +1,7 @@
 [project]
-name = "mariadb-mcp-server"
+name = "mcp-server-mariadb"
 version = "0.1.0"
-description = "Add your description here"
+description = "MCP Server for MariaDB"
 readme = "README.md"
 authors = [
     { name = "HeejunShin", email = "abel9851@gmail.com" }
@@ -16,7 +16,7 @@ dependencies = [
 ]
 
 [project.scripts]
-mariadb-mcp-server = "mariadb_mcp_server:main"
+mcp-server-mariadb = "mcp_server_mariadb:main"
 
 [build-system]
 requires = ["hatchling"]
