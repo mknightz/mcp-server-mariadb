@@ -1,4 +1,4 @@
-# mariadb-mcp-server
+# mcp-server-mariadb
 
 An MCP server implementation for retrieving data from mariadb
 
