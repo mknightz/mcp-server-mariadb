@@ -55,11 +55,11 @@ Add this configuration to enable development/unpublished servers:
 ```json
 {
     "mcpServers": {
-        "mariadb_mcp_server": {
+        "mcp_server_mariadb": {
             "command": "/PATH/TO/uv",
             "args": [
                 "--directory",
-                "/YOUR/SOURCE/PATH/mariadb-mcp-server/src/mariadb_mcp_server",
+                "/YOUR/SOURCE/PATH/mariadb-mcp-server/src/mcp_server_mariadb",
                 "run",
                 "server.py"
             ],
@@ -78,7 +78,7 @@ Add this configuration to enable development/unpublished servers:
 **Note**: Replace these placeholders with actual paths:
 
 - `/PATH/TO/uv`: Full path to UV executable
-- `/YOUR/SOURCE/PATH/mariadb-mcp-server/src/mariadb_mcp_server`: Path to server source code
+- `/YOUR/SOURCE/PATH/mariadb-mcp-server/src/mcp_server_mariadb`: Path to server source code
 
 ## License
 
