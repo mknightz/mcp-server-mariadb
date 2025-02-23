@@ -59,7 +59,7 @@ Add this configuration to enable development/unpublished servers:
             "command": "/PATH/TO/uv",
             "args": [
                 "--directory",
-                "/YOUR/SOURCE/PATH/mariadb-mcp-server/src/mcp_server_mariadb",
+                "/YOUR/SOURCE/PATH/mcp-server-mariadb/src/mcp_server_mariadb",
                 "run",
                 "server.py"
             ],
