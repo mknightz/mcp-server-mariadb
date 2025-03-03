@@ -78,7 +78,7 @@ Add this configuration to enable development/unpublished servers:
 **Note**: Replace these placeholders with actual paths:
 
 - `/PATH/TO/uv`: Full path to UV executable
-- `/YOUR/SOURCE/PATH/mariadb-mcp-server/src/mcp_server_mariadb`: Path to server source code
+- `/YOUR/SOURCE/PATH/mcp-server-mariadb/src/mcp_server_mariadb`: Path to server source code
 
 ## License
 
