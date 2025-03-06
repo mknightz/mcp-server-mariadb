@@ -49,8 +49,43 @@ Paths to Claude Desktop config file:
 
 - **MacOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
 - **Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
+<!-- markdownlint-disable MD033 -->
+<details>
+<summary>Add this configuration to enable published servers</summary>
 
-Add this configuration to enable development/unpublished servers:
+```json
+
+{
+    "mcpServers": {
+        "mcp_server_mariadb": {
+            "command": "/PATH/TO/uvx"
+            "args": [
+                "mcp-server-mariadb",
+                "--host",
+                "${DB_HOST}",
+                "--port",
+                "${DB_PORT}",
+                "--user",
+                "${DB_USER}",
+                "--password",
+                "${DB_PASSWORD}",
+                "--database",
+                "${DB_NAME}"
+            ]
+        }
+    }
+}
+
+```
+
+**Note**: Replace these placeholders with actual paths:
+
+- `/PATH/TO/uvx`: Full path to uvx executable
+
+</details>
+
+<details>
+<summary>Add this configuration to enable development/unpublished servers</summary>
 
 ```json
 {
@@ -79,6 +114,8 @@ Add this configuration to enable development/unpublished servers:
 
 - `/PATH/TO/uv`: Full path to UV executable
 - `/YOUR/SOURCE/PATH/mcp-server-mariadb/src/mcp_server_mariadb`: Path to server source code
+
+</details>
 
 ## License
 
